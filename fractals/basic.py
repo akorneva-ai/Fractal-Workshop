@@ -21,10 +21,11 @@ def draw_binary_tree(depth: int, size: float, angle: float) -> None:
         turtle.backward(size)
         return
 
-turtle.reset()
-turtle.left(90)
-draw_binary_tree(4, 100, 30)
-turtle.done()
+
+if __name__ == "__main__":
+    turtle.left(90)
+    draw_binary_tree(4, 100, 30)
+    turtle.done()
 
 
 

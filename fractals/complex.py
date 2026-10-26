@@ -88,5 +88,5 @@ def dragon(order: int, size: float, direction: int = 1) -> None:
         turtle.left(direction * 45)
 
 
-turtle.update()
-turtle.done()
+if __name__ == "__main__":
+    turtle.done()

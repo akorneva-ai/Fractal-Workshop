@@ -203,9 +203,9 @@ def main() -> None:
     draw_minkowski(order, size)
     draw_label(-300, -110, "Кривая Минковского")
 
-    screen.update()
-    turtle.done()
+
 
 
 if __name__ == "__main__":
-    main()
+    turtle.done()
+
