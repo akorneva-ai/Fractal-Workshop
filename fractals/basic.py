@@ -30,4 +30,22 @@ if __name__ == "__main__":
 
 
 def draw_branch(n: int, size: float) -> None:
-    pass
+    if n == 0:
+        turtle.forward(size)
+        turtle.backward(size)
+    else:
+        turtle.forward(size)
+
+        turtle.color('green')
+        turtle.left(45)
+        draw_branch(n - 1, size * 0.5)
+        turtle.right(45)
+
+        turtle.color('green')
+        turtle.right(45)
+        draw_branch(n - 1, size * 0.5)
+        turtle.left(45)
+
+        turtle.color('brown')
+        draw_branch(n - 1, size)
+        turtle.backward(size)
