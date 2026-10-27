@@ -136,7 +136,6 @@ def draw_koch_snowflake(
 ) -> None:
     """Рисует снежинку Коха с центром в заданной точке."""
 
-    # Находим начальную вершину равностороннего треугольника.
     start_x = center_x - size / 2
     start_y = center_y + sqrt(3) * size / 6
 

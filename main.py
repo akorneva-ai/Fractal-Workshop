@@ -49,11 +49,9 @@ def run_turtle(func, *args, **kwargs):
     """Запускает функцию рисования, ждет закрытия окна и возвращает управление в Pygame."""
     import time
 
-    # 1. Создаем НОВЫЙ экран (если старый умер, создастся новый)
     try:
         screen_turtle = turtle.Screen()
     except turtle.Terminator:
-        # Если предыдущий экран умер, сбрасываем состояние модуля turtle
         turtle.TurtleScreen._RUNNING = True
         screen_turtle = turtle.Screen()
 
@@ -97,8 +95,8 @@ button_data = [
     ("Снежинка Коха", lambda: run_turtle(koch_snowflake, 4, 300)),
     ("Кривая Минковского", lambda: run_turtle(minkowski, 4, 300)),
     ("Кривая Леви", lambda: run_turtle(levy, 10, 100)),
-    ("Ледяной фрактал 1", lambda: run_turtle(ice_fractal_1, 5, 200)),
-    ("Ледяной фрактал 2", lambda: run_turtle(ice_fractal_2, 5, 200)),
+    ("Ледяной фрактал 1", lambda: run_turtle(ice_fractal_1, 5, 20)),
+    ("Ледяной фрактал 2", lambda: run_turtle(ice_fractal_2, 5, 20)),
     ("Дракон Хартера", lambda: run_turtle(dragon, 10, 100)),
     ("Двоичное дерево", lambda: run_turtle(lambda: (turtle.left(90), draw_binary_tree(7, 100, 30)))),
 ]
