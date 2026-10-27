@@ -59,7 +59,7 @@ def run_turtle(func, *args, **kwargs):
     screen_turtle.title(f"Рисование: {func.__name__}. Закройте окно для возврата.")
 
     turtle.reset()
-    turtle.speed(0)
+    turtle.tracer(0)
     turtle.pencolor("black")
     turtle.pensize(1)
 
